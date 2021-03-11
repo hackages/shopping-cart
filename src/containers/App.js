@@ -4,7 +4,7 @@ import CartContainer from "./CartContainer";
 
 const App = () => (
   <div>
-    <h2>Shopping Cart App</h2>
+    <h2 data-cy="header">Shopping Cart App</h2>
     <hr />
     <ProductsContainer />
     <hr />

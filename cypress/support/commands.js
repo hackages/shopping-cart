@@ -23,3 +23,12 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+Cypress.Commands.add("addItemToCart", (product) => {
+  console.log(product);
+  // Given
+  cy.get(`[data-cy='${product.title}']`).as("iPad");
+
+  // When
+  cy.get("@iPad").click();
+});
