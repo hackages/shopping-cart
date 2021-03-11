@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
+    "cypress": "^6.6.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "react-scripts": "^3.4.1"
@@ -17,6 +18,8 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
+    "cypress:run": "cypress run",
+    "cypress:open": "cypress open",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "eject": "react-scripts eject",
